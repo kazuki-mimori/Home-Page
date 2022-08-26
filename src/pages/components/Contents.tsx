@@ -7,37 +7,47 @@ import {
   createStyles,
   ThemeIcon,
 } from "@mantine/core";
-import { IconBolt } from "@tabler/icons";
+import {
+  IconBolt,
+  IconCoinYen,
+  IconBrandFinder,
+  IconCloudLock,
+} from "@tabler/icons";
 
 interface FeatureProps {
+  Icon: any;
   title: React.ReactNode;
   description: React.ReactNode;
 }
 
 const data = [
   {
+    Icon: <IconCoinYen size={28} stroke={1.5} />,
     title: "価格",
     description:
       "日本の受託開発企業に比べて、圧倒的に安いです。予算が少ない場合でもぜひ一度ご相談ください。",
   },
   {
+    Icon: <IconBolt size={28} stroke={1.5} />,
     title: "技術力",
     description:
       "基本的に開発者はベトナム人エンジニです。日本の企業のシステムを作っていた経験者たちが開発を行うので、技術力は非常に高いです。",
   },
   {
+    Icon: <IconCloudLock size={28} stroke={1.5} />,
     title: "保守性",
     description:
       "優れた開発者たちがシステムを作るため保守性が高いです。トレンドな技術も使用できるため、システムの保守性が高くなります。",
   },
   {
+    Icon: <IconBrandFinder size={28} stroke={1.5} />,
     title: "コミュニケーション",
     description:
       "オフシュアのデメリットとなるコミニュケーション。私たちははお客様とのやりとりは日本人が対応させていただきます。意見の食い違いが起きないように責任を持って対応いたします。",
   },
 ];
 
-export function Feature({ title, description }: FeatureProps) {
+export function Feature({ Icon, title, description }: FeatureProps) {
   const theme = useMantineTheme();
   const { classes } = useStyles();
   return (
@@ -48,7 +58,7 @@ export function Feature({ title, description }: FeatureProps) {
         variant="gradient"
         gradient={{ deg: 0, from: "pink", to: "orange" }}
       >
-        <IconBolt size={28} stroke={1.5} />
+        {Icon}
       </ThemeIcon>
       <div>
         <Text style={{ marginTop: theme.spacing.sm, marginBottom: 7 }}>
@@ -126,10 +136,19 @@ export function Content({}: FeatureProps) {
   return (
     <>
       <div className="p-3">
-        <div>
-          <h2 className="text-3xl">システム開発事業</h2>
-          <label className="">system development</label>
+        <h1 className="mb-3 text-4xl">事業内容</h1>
+        <div className="ml-6">
+          <h2 className="text-2xl">1. システム開発事業</h2>
+          <label className="ml-6">system development</label>
+          <p className="ml-6">
+            我々の強みは広い人脈があること。
+            <br />
+            複数社のベトナム起業と提携をしているためお客様の要望に沿った開発者を選定し開発を行います。
+            <br />
+            お客様の要望に合わせて開発者を行います。
+          </p>
         </div>
+
         <Container className={classes.wrapper} id="contact">
           <SimpleGrid
             mt={60}
