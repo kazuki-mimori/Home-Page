@@ -32,9 +32,9 @@ const HeaderArea = () => {
   ));
 
   return (
-    <Header height={10} mb={120} className="">
-      <Container className="max-w-full">
-        <div className="bg-white py-6">
+    <Header id="home" height={1} mb={120} className="">
+      <Container className="max-w-full ">
+        <div className="bg-white py-10">
           <div className="mx-auto flex w-full items-center justify-between px-8  md:px-14 lg:container">
             <a href="#" className="text-3xl font-bold">
               MIMORI IT

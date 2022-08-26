@@ -2,6 +2,8 @@ import { createStyles, Container, Title, Text, Button } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   root: {
+    marginBottom: "70px",
+    height: "80vh",
     backgroundColor: "#11284b",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -81,33 +83,26 @@ export function Home() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              A{" "}
+              変化を嫌うものたちへ <br />
               <Text
                 component="span"
                 inherit
                 variant="gradient"
                 gradient={{ from: "pink", to: "yellow" }}
               >
-                fully featured
+                非常識を常識に。
+                <br />
               </Text>{" "}
-              React components library
+              私たちは動き出す。
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Build fully functional accessible web applications with ease –
-              Mantine includes more than 100 customizable components and hooks
-              to cover you in any situation
+              日本において、IT人材の不足は必ず起こる問題である。
+              <br />
+              いずれ世界の人材に目を向ける時が必ずくる。
+              <br />
+              私たちは、その時に必要な優秀な人材を提供する。
             </Text>
-
-            <Button
-              variant="gradient"
-              gradient={{ from: "pink", to: "yellow" }}
-              size="xl"
-              className={classes.control}
-              mt={40}
-            >
-              Get started
-            </Button>
           </div>
         </div>
       </Container>
