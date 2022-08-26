@@ -11,6 +11,7 @@
     "@mantine/core": "^5.2.3",
     "@mantine/ds": "^5.2.3",
     "@mantine/hooks": "^5.2.3",
+    "@tabler/icons": "^1.88.0",
     "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2"

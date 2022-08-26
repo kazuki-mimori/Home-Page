@@ -12,7 +12,7 @@ const HeaderArea = () => {
     },
     {
       name: "事業内容",
-      href: "#home",
+      href: "#contact",
     },
     {
       name: "制作実例",
@@ -42,7 +42,7 @@ const HeaderArea = () => {
             <div className="hidden items-center space-x-12 md:flex">
               {manus}
               <a href="#contact">
-                <button className="rounded-lg bg-yellow-500 px-6 py-2 font-bold transition-all duration-300 hover:bg-yellow-300">
+                <button className="rounded-lg bg-yellow-500 px-6 py-2 font-bold transition-all duration-300 hover:bg-yellow-300  ">
                   お問合せ
                 </button>
               </a>
